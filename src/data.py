@@ -2,8 +2,6 @@ import pandas as pd
 import re
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
-train = pd.read_csv('../data/train.csv')
-
 def clean_text(text):
     text = re.sub(r'https?://\S+', '', text) # Remove link
     text = re.sub(r'\n',' ', text) # Remove line breaks
