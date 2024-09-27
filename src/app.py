@@ -3,7 +3,7 @@ import pandas as pd
 from data import transform_text
 from model import predict
 
-train = pd.read_csv('../data/train.csv') 
+train = pd.read_csv('data/train.csv') 
 
 st.title("Disaster Prediction from Tweets")
 input_text = st.text_area("Enter your tweet text here:")
